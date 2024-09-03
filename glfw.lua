@@ -3,11 +3,11 @@ project "glfw"
 	language "C"
 	staticruntime "On"
 	flags "MultiProcessorCompile"
-	
+
 	location(build)
     targetdir (binaries)
     objdir (intermediate)
-	
+
 	files {
 		"glfw.lua",
 		"include/GLFW/glfw3.h",
@@ -15,7 +15,6 @@ project "glfw"
 		"src/internal.h",
 		"src/platform.h",
 		"src/mappings.h",
-		"src/mappings.h.in",
 		"src/context.c",
 		"src/init.c",
 		"src/input.c",
@@ -29,7 +28,7 @@ project "glfw"
 		"src/null_platform.h",
 		"src/null_joystick.h",
 		"src/null_init.c",
-		
+
 		"src/null_monitor.c",
 		"src/null_window.c",
 		"src/null_joystick.c",
@@ -69,7 +68,7 @@ project "glfw"
 			"_GLFW_WIN32",
 			"_CRT_SECURE_NO_WARNINGS"
 		}
-	
+
 	filter "system:linux"
 		pic "On"
 		systemversion "latest"
